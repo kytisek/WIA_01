@@ -55,6 +55,47 @@ Widzę i opisuję, bo tęsknię po tobie.</textarea><br />
   </fieldset>
 </form>
 
+<form action="formularz_akcja.html">
+  <fieldset>
+    <legend>Lista wyboru z grupowaniem</legend>
+    <label for="cars2">wybierz ulubioną markę:</label>
+    <select id="cars2" name="cars2">
+     <optgroup label="auta szwedzkie">
+       <option value="volvo">Volvo</option>
+       <option value="saab">Saab</option>
+     </optgroup>
+      <optgroup label="auta niemieckie">
+        <option value="audi">Audi</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+      </optgroup>
+      <optgroup label="auta włoskie">
+        <option value="alfa_romeo">Alfa Romeo</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="fiat">Fiat</option>
+        <option value="lancia">Lancia</option>
+      </optgroup>
+    </select><br />
+    <input type="submit" value="Wyślij">
+  </fieldset>
+</form>
+
+<form action="formularz_akcja.html">
+<fieldset>
+  <legend>Lista wielokrotnego wyboru</legend>
+  <label for="cars3">wybierz ulubioną markę:</label>
+  <select id="cars3" name="cars3" size="10" multiple>
+    <option value="audi">Audi</option>
+    <option value="bmw" selected>BMW</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="alfa_romeo">Alfa Romeo</option>
+    <option value="ferrari">Ferrari</option>
+    <option value="fiat" disabled>Fiat</option>
+  </select><br />
+  <input type="submit" value="Wyślij">
+</fieldset>
+</form>
+
 
 </body>
 </html>
