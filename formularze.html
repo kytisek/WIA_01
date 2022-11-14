@@ -96,6 +96,21 @@ Widzę i opisuję, bo tęsknię po tobie.</textarea><br />
 </fieldset>
 </form>
 
-
+<form action="formularz_akcja.html">
+  <fieldset>
+    <legend>Predefiniowanie wartości</legend>
+    <label for="browser_name">Podaj nazwe przeglądarki:</label>
+    <input list="browsers" id="browser_name" name="browser_name">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+      <br />
+      <input type="submit" value="Wyślij">
+  </fieldset>
+</form>
 </body>
 </html>
