@@ -5,7 +5,7 @@
     <title>Formularz</title>
 </head>
 <body>
-<form>
+<form action="formularz_akcja.html">
   <fieldset>
     <legend>Etykieta i małe pole tekstowe</legend>
     <label for="fname">Imię:</label><br />
@@ -15,6 +15,29 @@
     <input type="submit" value="Wyślij">
   </fieldset>
 </form>
-<
+
+<form action="formularz_akcja.html">
+<fieldset>
+  <legend>Przycisk</legend>
+  <button type="button" onclick="alert('Witaj mordko');">Funkcja alert() [Javascript]</button>>
+  <br /><br />
+  <input type="submit" value="Wyślij">
+</fieldset>
+</form>
+
+<form action="formularz_akcja.html">
+  <fieldset>
+    <legend></legend>
+    <label for="message">Inwokacja</label><br />
+    <textarea id="message" name="message" rows="5" cols="50">
+Litwo! Ojczyzno moja! Ty jesteś jak zdrowie.
+Ile cię trzeba cenić, ten tylko się dowie,
+Kto cię stracił. Dziś piękność twą w całej ozdobie.
+Widzę i opisuję, bo tęsknię po tobie.</textarea><br />
+    <input type="submit" value="Wyślij">
+  </fieldset>
+</form>
+
+
 </body>
 </html>
