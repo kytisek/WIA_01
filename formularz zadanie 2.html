@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <fieldset>
+    <label for="marka">Marka</label>
+    <input type="text" id="marka" name="marka" required><br />
+    <label for="model">Model:</label>
+    <input type="text" id="model" name="model"><br />
+    <label for="typn">Typ nadwozia:</label>
+    <select id="typn" name="typn" size="5" multiple>
+      <option value="crossover">Crossover</option>
+      <option value="sedan">Sedan</option>
+      <option value="suv">Suv</option>
+      <option value="kombi">Kombi</option>
+      <option value="hatchback">Hatchback</option>
+    </select><br />
+    <label for="rok">Miesiąc i rok produkcji:</label>
+    <input type="month" id="rok" name="rok"><br />
+    <label for="rdzp">Rodzaj paliwa:</label>
+    <select id="rdzp" name="rdzp">
+      <option value="benzyna">Benzyna</option>
+      <option value="diesel">Diesel</option>
+      <option value="gaz">Gaz</option>
+      <option value="wodor">Wodór</option>
+      <option value="etanol">Etanol</option>
+    </select><br />
+    <label for="przo">Przebieg od:</label>
+    <input type="range" min="25000" step="25000" max="250000" id="przo" name="przo"><br />
+
+    <label for="przd">Przebieg do:</label>
+    <input type="range" min="25000" step="25000" max="250000" id="przd" name="przd" oninput="rangeValue.innerText = this.value"><br />
+    <p id="rangeValue"></p>
+    <label for="co">Cena od:</label>
+    <input type="range" min="2000" step="1000" max="500000" id="co" name="co"><br />
+
+    <label for="cd">Cena do:</label>
+    <input type="range" min="2000" step="1000" max="500000" id="cd" name="cd"><br />
+
+    <input type="button" value="Wyślij"><br />
+
+
+
+
+
+
+
+  </fieldset>
+</form>
+
+</body>
+</html>
