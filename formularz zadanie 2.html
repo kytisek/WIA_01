@@ -5,13 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-<form>
+<form action="formularz_akcja.html">
   <fieldset>
-    <label for="marka">Marka</label>
+    <label for="marka">Marka<span style="color: purple">*</span></label>
     <input type="text" id="marka" name="marka" required><br />
     <label for="model">Model:</label>
     <input type="text" id="model" name="model"><br />
-    <label for="typn">Typ nadwozia:</label>
+    <label for="typn">Typ nadwozia:<span style="color: purple">*</span></label>
     <select id="typn" name="typn" size="5" multiple>
       <option value="crossover">Crossover</option>
       <option value="sedan">Sedan</option>
@@ -28,26 +28,29 @@
       <option value="gaz">Gaz</option>
       <option value="wodor">Wodór</option>
       <option value="etanol">Etanol</option>
-    </select><br />
-    <label for="przo">Przebieg od:</label>
-    <input type="range" min="25000" step="25000" max="250000" id="przo" name="przo"><br />
-
-    <label for="przd">Przebieg do:</label>
-    <input type="range" min="25000" step="25000" max="250000" id="przd" name="przd" oninput="rangeValue.innerText = this.value"><br />
-    <p id="rangeValue"></p>
-    <label for="co">Cena od:</label>
-    <input type="range" min="2000" step="1000" max="500000" id="co" name="co"><br />
-
-    <label for="cd">Cena do:</label>
-    <input type="range" min="2000" step="1000" max="500000" id="cd" name="cd"><br />
-
-    <input type="button" value="Wyślij"><br />
-
-
-
-
-
-
+    </select><br /><br />
+    <hr>
+    <br /><br />
+    <label for="prze">Podaj przebieg od</label>
+    <input type="range" id="prze" name="przebieg" min="25000" max="250000" step="25000" onchange="rangevalue" oninput="this.nextElementSibling.value = this.value">
+    <output id="prze">0</output>
+    <br /><br />
+    <label for="przeb">Podaj przebieg do</label>
+    <input type="range" id="przeb" name="przeb" min="25000" max="250000" step="25000" onchange="rangevalue" oninput="this.nextElementSibling.value = this.value">
+    <output id="przeb">0</output>
+    <br /><br />
+    <hr>
+    <br /><br />
+    <label for="ca">Cena od<span style="color: purple">*</span></label>
+    <input type="range" id="ca" name="ca" min="2000" max="500000" step="1000" onchange="rangevalue" oninput="this.nextElementSibling.value = this.value">
+    <output id="ca">0</output>
+    <br /><br />
+    <label for="ca1">Cena do<span style="color: purple">*</span></label>
+    <input type="range" id="ca1" name="ca1" min="2000" max="500000" step="1000" onchange="rangevalue" oninput="this.nextElementSibling.value = this.value">
+    <output id="ca1">0</output>
+    <br /><br />
+    <input type="submit" value="Wyślij">
+    <hr>
 
   </fieldset>
 </form>
