@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .jeden{
+            background-image: url("/assets/samo.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
 <div style="text-align: Justify">
@@ -27,5 +35,34 @@
     Ra, ra, ra, ra, raaa We smoke the atmosphere again
     Ra, ra, ra, ra, raaa Tause I'm holding the gas pedal
 </div>
+<h1>Mapa odsyłaczy na obrazku</h1>
+<div style="text-align: Justify">
+    <img alt="" src="assets/geo.jpg" usemap="#mymap" >
+    <map name="#mymap">
+        <area shape="rect" coords="148,58,50" alt="" href="https://wp.pl/">
+        <area shape="rect" coords="148,58,50" alt="" href="https://wp.pl/">
+
+        <area shape="circle" coords="239,264,369" alt="" href="https://wp.pl/">
+    </map>
+</div>
+<h1>Tekst jako tlo obrazku</h1>
+<div class="jeden">
+    This is our time! - this is the hour
+    Deep bass can be hearen! - darkened car window
+    Highway, left lane! - we smoke the atmosphere again
+    You can't stop us! - tause I'm holding the gas pedal
+    Ra, ra, ra, ra, raaa This is the hour
+    Ra, ra, ra, ra, raaa Darkened car window
+    Ra, ra, ra, ra, raaa We smoke the atmosphere again
+    Ra, ra, ra, ra, raaa Tause I'm holding the gas pedal
+</div>
+<h1>Użycie elementu picture</h1>
+<picture>
+    <source media="(min-width: 800px)" srcset="assets/chi.jpg">
+    <source media="(min-width: 600px)" srcset="assets/chih.jpg">
+    <img alt="" src="assets/chihi.jpg">
+</picture>
+
+
 </body>
 </html>
