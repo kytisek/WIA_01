@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Obrazek otoczony tekstem z lewej strony</h2>
+<div style="text-align: justify">
+  <img alt="" src="assets/Kot2.jpg" style="float: right; margin-left: 15px; width: 250px; height: 280px">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+  but also the leap into electronic typesetting, remaining essentially unchanged.
+  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+  and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  <h1>Obraz z opisem</h1>
+  <figure>
+    <img alt="obraz" src="https://loremflickr.com/320/140/dog">
+    <figcaption>Obraz 1. Foto pies</figcaption>
+  </figure>
+</div>
+<h1>Mapa odsyłaczy na obrazku</h1>
+<div>
+  <img alt="" src="assets/figury.jpg" usemap="#mymap">
+  <map name="mymap">
+    <area shape="circle" coords="550,200,200" alt=""
+          href="https://wp.pl/">
+  </map>
+</div>
+<h1>Obrazek jako tło innego elementu</h1>
+<div style="background-image: url('assets/.png');
+background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus vel elit sed accumsan.
+  Donec nibh odio, maximus quis tincidunt eu, ornare ut augue. Aliquam semper imperdiet porttitor.
+  Nulla aliquet velit ut sapien tempus elementum. In justo urna, accumsan sit amet lectus vitae, hendrerit aliquam ligula.
+  Sed laoreet sem vel leo ultricies, et venenatis eros dignissim. Etiam lectus enim, egestas non imperdiet non, porta sit amet quam.
+  Donec lacinia nisi in ultrices consectetur.
+  Nunc efficitur eu eros quis pharetra. Mauri
+</div>
+<h1>Użycie elementu picture</h1>
+<picture>
+  <source media="(min-width:800px" srcset="assets/kot900_1000.jpg">
+  <source media="(min-width:600px" srcset="assets/kot650_560.jpg">
+  <img alt="" src="assets/kot400_399.jpg"
+</picture>
+
+</body>
+</html>
