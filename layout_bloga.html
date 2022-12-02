@@ -8,25 +8,21 @@
         .naglowek {
             text-align: center;
             margin-top: 20px;
-            height: 40px;
+            padding: 40px;
         }
-        .stopka {
-            text-align: center;
-            margin-top: 20px;
-            background-color: aqua;
-        }
+
         .kolumna1 {
             width: 75%;
             float: left;
             margin-inside: 40px;
-            height: 80px;
+            padding: 80px;
 
         }
         .kolumna2 {
             width: 25%;
             float: right;
             margin-inside: 40px;
-            height: 80px;
+            padding: 80px;
         }
         @media screen and (max-width: 800px) {
             .kolumna1 {
@@ -36,19 +32,28 @@
                 width: 100%;
             }
         }
-        .body{
+        body{
             margin-inside: 20px;
              font-family: Arial, sans-serif;
             background-color: cornflowerblue;
         }
+        footer {
+            text-align: center;
+            margin-inside: 20px;
+            margin-top: 20px;
+            background-color: aqua;
+            padding: 20px;
+            width: 100%;
+
+        }
     </style>
 </head>
-<body class="body">
+<body>
 <header class="naglowek" style="background-color: #aaeebb" >
     <h2>Nagłówek</h2>
 </header>
-<section class="kolumna1" style="background-color: chocolate">
-    <article>
+<section class="kolumna1">
+    <article style="background-color: chocolate">
         <h2>Tytuł artykułu</h2>
         <h5>Dodany 15-10-2022</h5>
         <figure>
@@ -56,7 +61,7 @@
         </figure>
         <p>god damn pretty boy</p>
     </article>
-    <article>
+    <article style="background-color: blue">
         <h2>Tytuł artykułu</h2>
         <h5>Dodany 15-10-2022</h5>
         <figure>
@@ -65,10 +70,30 @@
         <p>god damn pretty boy</p>
     </article>
 </section>
-<section class="kolumna2" style="background-color: chartreuse">
-    <h2>kolumna nr2</h2>
+<section class="kolumna2">
+    <div style="background-color: gold">
+        <h2>Tytuł artykułu</h2>
+        <figure>
+            <img src="https://loremflickr.com/320/240/dog" alt="Trulli" style="width: 20%">
+        </figure>
+        <p>god damn pretty boy</p>
+    </div>
+    <div style="background-color: gray">
+        <h2>Tytuł artykułu</h2>
+        <figure>
+            <img src="https://loremflickr.com/320/240/dog" alt="Trulli" style="width: 20%">
+        </figure>
+
+    </div>
+    <div style="background-color: violet">
+        <h2>Tytuł artykułu</h2>
+        <figure>
+            <img src="https://loremflickr.com/320/240/dog" alt="Trulli" style="width: 20%">
+        </figure>
+
+    </div>
 </section>
-<footer class="stopka" >
+<footer>
     <h2>Stopka</h2>
 </footer>
 </body>
