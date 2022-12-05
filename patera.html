@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .column {
+      float: left;
+      width: 20%;
+      padding: 10px;
+    }
+    .column2 {
+      float: left;
+      width: 60%;
+      padding: 10px;
+    }
+    .naglowek{
+      float: left;
+      width: 100%;
+      padding: 10px;
+
+    }
+    .stopka{
+      float: left;
+      width: 100%;
+      padding: 10px;
+      height: 100px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+      .column2 {
+        width: 100%;
+      }
+    }
+    .zaloguj{
+      background-color: greenyellow;
+      width: 100%;
+    }
+    .legend{
+      width: 100%;
+    }
+    .bord{
+      border: 1px;
+      border-collapse: collapse;
+    }
+    .wys{
+      background-color: cyan;
+    }
+
+  </style>
+</head>
+<body>
+<header class="naglowek" style="background-color: #aaa">
+  <h6>Nagłówek</h6>
+  <picture>
+    <source media="(min-width: 800px)" srcset="assets/980x240.jpg">
+    <source media="(min-width: 600px)" srcset="assets/700x200.jpg">
+    <source media="(min-width: 450px)" srcset="assets/500x180.jpg">
+    <img src="assets/400x150.jpg" alt="">
+  </picture>
+</header>
+<main>
+
+  <div class="column" style="background-color: #aeb">
+    <h6>kolumna nr1</h6>
+    <form>
+      <fieldset style="border-color: blue">
+        <legend class="legend">Formularz logowania</legend>
+        <label for="log">Login:</label><br />
+        <input type="text" id="log" name="log"><br />
+        <label for="h">Hasło:</label><br />
+        <input type="text" id="h" name="h"><br /><br />
+        <label for="zh">Zapamiętaj hasło:</label><br />
+        <input type="text" id="zh" name="zh"><br /><br />
+        <input class="zaloguj" type="submit" value="Zaloguj">
+      </fieldset>
+    </form>
+  </div>
+  <div class="column2" style="background-color: #bca">
+    <h6> kolumna nr2</h6>
+  </div>
+  <div class="column" style="background-color: #cbd">
+    <h6> kolumna nr3</h6>
+    <form>
+    <fieldset class="bord" style="border-color: red">
+      <label for="li">Pole wyszukiwania</label>
+      <input type="text" id="li" name="log">
+      <input class="wys" type="submit" value="Wyślij">
+    </fieldset>
+    </form>
+    <ul style="list-style-type: lower-greek">
+
+    </ul>
+  </div>
+
+</main>
+<footer class="stopka" style="background-color: aqua">
+  <h6>Stopka</h6>
+</footer>
+</body>
+</html>
