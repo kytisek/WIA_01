@@ -17,6 +17,12 @@
       width: 60%;
       padding: 10px;
     }
+    .column3 {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      height: 500px;
+    }
     .naglowek{
       float: left;
       width: 100%;
@@ -37,6 +43,9 @@
       .column2 {
         width: 100%;
       }
+      .column3{
+        width: 100%;
+      }
     }
     .zaloguj{
       background-color: greenyellow;
@@ -45,14 +54,6 @@
     .legend{
       width: 100%;
     }
-    .bord{
-      border: 1px;
-      border-collapse: collapse;
-    }
-    .wys{
-      background-color: cyan;
-    }
-
   </style>
 </head>
 <body>
@@ -85,19 +86,22 @@
   <div class="column2" style="background-color: #bca">
     <h6> kolumna nr2</h6>
   </div>
-  <div class="column" style="background-color: #cbd">
-    <h6> kolumna nr3</h6>
-    <form>
-    <fieldset class="bord" style="border-color: red">
-      <label for="li">Pole wyszukiwania</label>
-      <input type="text" id="li" name="log">
-      <input class="wys" type="submit" value="Wyślij">
-    </fieldset>
-    </form>
-    <ul style="list-style-type: lower-greek">
 
-    </ul>
-  </div>
+    <div class="column3" style="background-color: lightblue">
+      <h6> kolumna nr3</h6>
+      <form action="https://www.google.pl/search" method="get" class="trzecia">
+        <input type="text"> <input style="background-color: cyan" type="submit" value="Szukaj">
+      </form>
+      <td>
+        <ul style="list-style-type: lower-greek" class="lista">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </td>
+    </div>
 
 </main>
 <footer class="stopka" style="background-color: aqua">
